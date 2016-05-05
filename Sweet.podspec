@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Sweet"
-  s.summary          = "A collection of sugar and helpers for UIKit, CoreData, Foundation, Swift and others."
+  s.summary          = "A collection of sugar and helpers for UIKit, CoreData, Foundation, Swift and more."
   s.version          = "0.1.0"
   s.homepage         = "https://github.com/bakkenbaeck/Sweet"
   s.license          = 'MIT'
