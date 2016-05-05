@@ -5,11 +5,115 @@
 ![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20OS%20X%20%7C%20watchOS%20%7C%20tvOS%20-lightgrey.svg)
 [![License](https://img.shields.io/cocoapods/l/Sweet.svg?style=flat)](https://cocoapods.org/pods/DATAStack)
 
+# SweetUIKit
 
-## Usage
+## UIAlertController
+
+### Dismissable alert
 
 ```swift
-<API>
+let alertController = UIAlertController.dismissableAlert(title: "Not allowed access", message: "Please contact your admin to get access.")
+self.presentViewController(alertController, animated: true, completion: nil)
+```
+
+### Destructive confirmation alert
+
+```swift
+let alertController = UIAlertController.destructiveConfirmationAlert(message: "Are you sure you want to log out?", destructiveActionTitle: "Log out") {
+    self.controllerDelegate?.settingsControllerDidPressLogoutButton(self)
+}
+self.presentViewController(alertController, animated: true, completion: nil)
+```
+
+### Error alert
+
+```swift
+let alertController = UIAlertController.errorAlert(error)
+self.presentViewController(alertController, animated: true, completion: nil)
+```
+
+### Progress alert
+
+```swift
+let progressAlert = UIAlertController.progressAlert("Creating album...")
+self.presentViewController(progressAlert, animated: true, completion: nil)
+self.fetcher.createAlbum(title: self.titleTextField.text, photos: self.selectedPhotos) { error in
+    progressAlert.dismissViewControllerAnimated(true) {
+        if let error = error {
+            let alertController = UIAlertController.errorAlert(error)
+            self.presentViewController(alertController, animated: true, completion: nil)
+        } else {
+            // Success
+        }
+    }
+}
+```
+
+## UILabel
+
+### Calculate width
+
+```swift
+let width = self.usernameLabel.width()
+// Do something with new width
+```
+
+## UIView
+
+### Shake
+
+```swift
+self.fetcher.authenticate(username, password: password) { clientID, clientSecret, accessToken, refreshToken, expiresIn, error in
+    if let error = error {
+        // Update UI to display error
+        self.tableView.shake()
+    } else {
+      // success
+    }
+}
+```
+
+## UIImage
+
+#### Centered frame
+
+```swift
+let image = UIImage(named: "art.png")!
+let frame = image.centeredFrame()
+// Do something with new frame
+```
+
+## UIViewController
+
+#### Application window
+
+```swift
+let window = self.applicationWindow()
+```
+
+# SweetCoreData
+
+## NSManagedObjectContext
+
+### Drop entity
+
+```swift
+let context = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+context.dropEntity("User")
+```
+
+### Count entity
+
+```swift
+let context = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+let count = context.countEntity("User")
+```
+
+### Fetch entity (with generics)
+
+```swift
+let context = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+let users: [User] = context.fetchEntity("User")
 ```
 
 ## Installation
