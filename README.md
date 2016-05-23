@@ -5,7 +5,7 @@
 ![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20OS%20X%20%7C%20watchOS%20%7C%20tvOS%20-lightgrey.svg)
 [![License](https://img.shields.io/cocoapods/l/Sweetness.svg?style=flat)](https://cocoapods.org/pods/Sweetness)
 
-# SweetUIKit
+# [SweetUIKit](https://github.com/bakkenbaeck/SweetUIKit)
 
 ## UIAlertController
 
@@ -91,7 +91,7 @@ let frame = image.centeredFrame()
 let window = self.applicationWindow()
 ```
 
-# SweetCoreData
+# [SweetCoreData](https://github.com/bakkenbaeck/SweetCoreData)
 
 ## NSManagedObjectContext
 
