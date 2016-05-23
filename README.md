@@ -5,6 +5,8 @@
 ![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20OS%20X%20%7C%20watchOS%20%7C%20tvOS%20-lightgrey.svg)
 [![License](https://img.shields.io/cocoapods/l/Sweetness.svg?style=flat)](https://cocoapods.org/pods/Sweetness)
 
+A collection of helpers and sugar methods to sweeten your apps.
+
 # [SweetUIKit](https://github.com/bakkenbaeck/SweetUIKit)
 
 ## UIAlertController
