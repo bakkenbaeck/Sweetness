@@ -1,13 +1,13 @@
 # Sweetness
 
 [![Version](https://img.shields.io/cocoapods/v/Sweetness.svg?style=flat)](https://cocoapods.org/pods/Sweetness)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/bakkenbaeck/Sweetness)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/SweetOrg/Sweetness)
 ![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20OS%20X%20%7C%20watchOS%20%7C%20tvOS%20-lightgrey.svg)
 [![License](https://img.shields.io/cocoapods/l/Sweetness.svg?style=flat)](https://cocoapods.org/pods/Sweetness)
 
 A collection of helpers and sugar methods to sweeten your apps.
 
-# [SweetUIKit](https://github.com/bakkenbaeck/SweetUIKit)
+# [SweetUIKit](https://github.com/SweetOrg/SweetUIKit)
 
 ## UIAlertController
 
@@ -93,7 +93,7 @@ let frame = image.centeredFrame()
 let window = self.applicationWindow()
 ```
 
-# [SweetCoreData](https://github.com/bakkenbaeck/SweetCoreData)
+# [SweetCoreData](https://github.com/SweetOrg/SweetCoreData)
 
 ## NSManagedObjectContext
 
@@ -131,7 +131,7 @@ pod 'Sweetness'
 it, simply add the following line to your Cartfile:
 
 ```ruby
-github "bakkenbaeck/Sweetness"
+github "SweetOrg/Sweetness"
 ```
 
 ## License
@@ -140,4 +140,4 @@ github "bakkenbaeck/Sweetness"
 
 ## Author
 
-Bakken & Bæck AS, [@bakkenbaeck](https://twitter.com/bakkenbaeck)
+Bakken & Bæck AS, [@SweetOrg](https://twitter.com/SweetOrg)
